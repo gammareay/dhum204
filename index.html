@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHUM 2024</title>
+    <link rel="stylesheet" href="left.css">
+</head>
+<body>
+    <div class="site-container">
+        <!-- Left Side Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <h1 class="site-title">DHUM 204</h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#work" class="active">About</a></li>
+                        <li><a href="#about">Text</a></li>
+                        <li><a href="#exhibitions">Time</a></li>
+                        <li><a href="#press">Space</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="sidebar-footer">
+                    <p>&copy; 2025 Artist Name</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <section id="gallery" class="responsive-gallery">
+                <!-- Artwork 1 -->
+                <div class="artwork" data-id="1">
+                    <div class="artwork-container">
+                        <img src="artwork1.jpg" alt="Moreau/Detrick Reliquary" data-high-res="artwork1-large.jpg">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h2>Student one</h2>
+                        <p>project title</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 2 -->
+                <div class="artwork" data-id="2">
+                    <div class="artwork-container">
+                        <img src="artwork2.jpg" alt="Falls" data-high-res="artwork2-large.jpg">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h2>Student 2</h2>
+                        <p>project title</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 3 -->
+                <div class="artwork" data-id="3">
+                    <div class="artwork-container">
+                        <img src="artwork3.jpg" alt="Sump" data-high-res="artwork3-large.jpg">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h2>student 3</h2>
+                        <p>Project title</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 4 -->
+                <div class="artwork" data-id="4">
+                    <div class="artwork-container">
+                        <img src="artwork4.jpg" alt="Untitled Sculpture" data-high-res="artwork4-large.jpg">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h2>Student 4</h2>
+                        <p>project title</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 5 -->
+                <div class="artwork" data-id="5">
+                    <div class="artwork-container">
+                        <img src="artwork5.jpg" alt="Landscape Study" data-high-res="artwork5-large.jpg">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h2>Student 5</h2>
+                        <p>prject title</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 6 -->
+                <div class="artwork" data-id="6">
+                    <div class="artwork-container">
+                        <img src="artwork6.jpg" alt="Abstract Composition" data-high-res="artwork6-large.jpg">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h2>Sutdent 6</h2>
+                        <p>project title</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btn">&times;</button>
+            <div class="lightbox-container">
+                <button class="nav-btn prev-btn">&lt;</button>
+                <div class="lightbox-image-container">
+                    <img id="lightbox-image" src="" alt="">
+                </div>
+                <button class="nav-btn next-btn">&gt;</button>
+            </div>
+            <div class="lightbox-details">
+                <h2 id="lightbox-title"></h2>
+                <div id="lightbox-description"></div>
+                <div id="lightbox-dimensions"></div>
+                <div id="lightbox-year"></div>
+            </div>
+            <div class="lightbox-counter">
+                <span id="current-index"></span> / <span id="total-count"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
