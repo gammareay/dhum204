@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title - DHUM 204</title>
+    <link rel="stylesheet" href="left.css">
+    <style>
+        /* Single Column Page Specific Styles <3*/
+        .single-column {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        a, button, input {
+            cursor: url('space-small.png'), auto;
+            /* The 'auto' is a fallback if the image doesn't load */
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        .project-meta {
+            font-size: 0.95rem;
+            color: var(--light-text);
+            margin-bottom: 2rem;
+        }
+
+        .project-content {
+            line-height: 1.8;
+        }
+
+        .project-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .project-content h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .project-image {
+            width: 100%;
+            margin: 2rem 0;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-image figcaption {
+            font-size: 0.85rem;
+            color: var(--light-text);
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        .back-link:hover {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .single-column {
+                padding: 2rem 1rem;
+            }
+
+            .project-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .project-content h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>DHUM 204</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#text">TEXT</a></li>
+                <li><a href="#time">TIME</a></li>
+                <li><a href="#space">SPACE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="single-column">
+            <div class="project-header">
+                <h2>Influence of Telegraph Communication on Message Form</h2>
+                <div class="project-meta">
+                    <p>Nicholas Okken | DHUM 204</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <p>
+                    With this project, I aim to show the connection between communication methods and the types of
+                    content included, specifically focusing on the shift from letters to the early era of the telegram.
+                </p>
+
+                <figure class="project-image">
+                    <img src="book-2.png" alt="Project image">
+                    <figcaption>Image of Book</figcaption>
+                </figure>
+
+                <h3>Text Comparison: 19th-Century Letters and Telegrams</h3>
+                <p>
+                    To compare the contents of various communication forms, I sourced 19th-century letters from the
+                    Library of Congress and a variety of early telegram records, including telegrams from the original
+                    1858 Transatlantic Telegraph Cable, the American Civil War, between Emily Vanderbilt Hammond and
+                    Martha Berry, and random users of the Western Union Telegraph Company in Ohio.
+                </p>
+
+                <p>
+                    To visualize this text data, the most frequently occurring words were visualized by Python’s
+                    WordCloud tool. Topics were modelled with UMass’s MALLET tool and rendered into tables using Python
+                    Rich. For the topic modelling, the corpus was combined, divided into ten subdivisions, and the most
+                    frequently occurring topics in each division were recognized by the tool.
+                </p>
+
+                <figure class="project-image">
+                    <img src="book-2.png" alt="Another project image">
+                    <figcaption>Pretend an actual image was uploaded!</figcaption>
+                </figure>
+
+                <h3>Thought Process & Discussion</h3>
+                <p>
+                    When beginning this project, I expected for swift communication methods to increase the viability
+                    of sending more personal and frequent updates to family. However, of note is the cost of each
+                    communication method at the time. Sending a letter, even across the Atlantic, was only a few cents
+                    when these letters were written. Meanwhile, sending a telegram initially cost $0.25 per word, even
+                    just within the United States. This per-word basis also encouraged shorter messages that lacked
+                    long-winded explanations. This hefty price difference likely deterred many working-class
+                    individuals from frequently sending messages using these methods.
+                </p>
+
+                <p>
+                    With this cost differential, it’s not surprising that most telegrams were used for urgent news such
+                    as deaths or for political communication, as the transmission speed outweighed the cost of sending
+                    in the case of deaths, and political figures would be more likely to have access to the funds
+                    required to consistently use the telegram. Ultimately, the telegram was rarely, if ever, used as a
+                    casual communication method in the same ways as letters.
+                </p>
+
+                <p>
+                    In the future, a more thorough project would likely benefit from finding or manually cleaning
+                    additional telegram transcripts. Online, I was able to find only a few pre-cleaned transcripts,
+                    including those from the initial 1858 transatlantic cable and select telegrams from Ohio. While I
+                    did manually convert the Martha Berry telegrams into a readable format, many more image-based
+                    telegram records exist online, and transcribing those could offer a much wider repository of data.
+                    As my current sources only included a few contexts, additional telegram records would provide
+                    credence to the textual analysis.
+                </p>
+
+                <a href="index.html" class="back-link">← Back to Projects</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DHUM 204.</p>
+    </footer>
+</body>
+</html>
