@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Title - DHUM 204</title>
+  <link rel="stylesheet" href="left.css">
+  <style>
+    /* Single Column Page Specific Styles <3*/
+    .single-column {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    a, button, input {
+      cursor: url('space-small.png'), auto;
+      /* The 'auto' is a fallback if the image doesn't load */
+    }
+
+    .project-header {
+      margin-bottom: 3rem;
+    }
+
+    .project-header h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--accent-color);
+    }
+
+    .project-meta {
+      font-size: 0.95rem;
+      color: var(--light-text);
+      margin-bottom: 2rem;
+    }
+
+    .project-content {
+      line-height: 1.8;
+    }
+
+    .project-content p {
+      margin-bottom: 1.5rem;
+    }
+
+    .project-content h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+    }
+
+    .project-image {
+      width: 100%;
+      margin: 2rem 0;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .project-image figcaption {
+      font-size: 0.85rem;
+      color: var(--light-text);
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 3rem;
+      text-decoration: none;
+      color: var(--text-color);
+      font-size: 0.95rem;
+    }
+
+    .back-link:hover {
+      color: var(--secondary-color);
+    }
+
+    @media (max-width: 768px) {
+      .single-column {
+        padding: 2rem 1rem;
+      }
+
+      .project-header h2 {
+        font-size: 1.5rem;
+      }
+
+      .project-content h3 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">
+      <h1>DHUM 204</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="https://gammareay.github.io/dhum204/index.html">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#text">TEXT</a></li>
+      <li><a href="#time">TIME</a></li>
+      <li><a href="#space">SPACE</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="single-column">
+    <div class="project-header">
+      <h2>Guide/Template on Setting Up HTML</h2>
+      <div class="project-meta">
+        <p>Nicholas Okken | DHUM 204</p>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <p>
+        Feel free to copy/paste any of this to help with your pages!
+      </p>
+      <p>
+        Tags are represented by < > with a keyword or letter inside. They specify how HTML should be rendered.
+        You can use <b>bold</b> and <i>italic</i> text by using < > with the letter b inside for bold or i for italics.
+        You close < > by repeating the same tag, but with a / before the letter.
+      </p>
+
+      <p>
+        Using p in the tag lets you create individual paragraphs. Additionally, enter is NOT rendered as a line break.
+        Instead, use br in your < > tag. No closing tag necessary!
+      </p>
+
+      <p>Here, you can embed an image. First, it must be uploaded to the repository. Then, copy the text below in the
+      this file's raw HTML and change book-2.png to the actual filename of your image. Update the alt text as well, and
+      add a visible caption.</p>
+
+<!--      here, you can embed an image. -->
+      <figure class="project-image">
+        <img src="book-2.png" alt="Project image">
+        <figcaption>Image of Book</figcaption>
+      </figure>
+
+      <h3>Subheadings</h3>
+      <p>
+        To set a subheading, use h3 in your < > tag. This makes it follow the predefined header formatting.
+      </p>
+
+      <p>
+        To embed other content on your page, such as a Google MyMaps map, copy the text below from the source HTML file,
+        and replace the URL with the one for your page. Alternatively, MyMaps will provide an embed to directly copy/paste
+        into your file by clicking the three vertical dots near the title of your map and selecting "Embed on my site".
+      </p>
+
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=161pjoEETbRKKe_Wq3S9cxpJvtxGJicg&ehbc=2E312F" width="640" height="480"></iframe>
+
+      <a href="https://gammareay.github.io/dhum204/index.html" class="back-link">← Back to Projects</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2026 DHUM 204.</p>
+</footer>
+</body>
+</html>
